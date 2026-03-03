@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Muhamad Fadlurrahman</title>
+    <style>
+        /* SEMUA CSS MASUK DI SINI */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+
+        /* Navigasi */
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            /* Menggunakan Network Image sebagai background */
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 1100px;
+            margin: 4rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            border-left: 5px solid #00d4ff;
+            padding-left: 15px;
+            margin-bottom: 2rem;
+        }
+
+        /* Bagian Biografi */
+        .content-flex {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #00d4ff;
+        }
+
+        /* Grid Galeri */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: #1a1a1a;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .content-flex { text-align: center; justify-content: center; }
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">KashNews</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#biografi">Biografi</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Muhamad Fadlurrahman</h1>
+        <p>IT Enthusiast | Web Developer | Cyber Security Learner</p>
+    </section>
+
+    <section id="biografi" class="container">
+        <h2>Biografi</h2>
+        <div class="content-flex">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=300" alt="Profil Fadlu" class="profile-img">
+            <div style="flex: 1;">
+                <p>Halo! Saya adalah seorang pembelajar di dunia teknologi informasi. Fokus utama saya adalah membangun aplikasi web yang aman dan fungsional. Saya percaya bahwa teknologi dapat mempermudah hidup banyak orang jika diimplementasikan dengan tepat.</p>
+                <br>
+                <p><strong>Lokasi:</strong> Indonesia</p>
+                <p><strong>Minat:</strong> Pengembangan Backend, Pentesting, & Cloud Computing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="container">
+        <h2>Galeri Projek</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400" alt="Dashboard Projek">
+                <div class="card-info">
+                    <h3>Dashboard Monitoring</h3>
+                    <p>Sistem pemantauan infrastruktur server secara real-time.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400" alt="Coding">
+                <div class="card-info">
+                    <h3>Security Audit</h3>
+                    <p>Melakukan pengecekan celah keamanan pada aplikasi web.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="E-Commerce">
+                <div class="card-info">
+                    <h3>E-Commerce App</h3>
+                    <p>Pengembangan platform jual beli online yang responsif.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Muhamad Fadlurrahman | Portofolio Web Server Debian</p>
+    </footer>
+
+</body>
+</html>
