@@ -138,10 +138,26 @@
             object-fit: cover;
         }
 
-        .card-info {
+       .card-info {
             padding: 1.5rem;
         }
 
+        button {
+            margin-top: 10px;
+            padding: 8px 14px;
+            border: none;
+            background: #00d4ff;
+            color: white;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s ease;
+            font-weight: 500;
+        }
+
+        button:hover {
+            background: #009ec3;
+            transform: scale(1.05);
+        }
         /* Footer */
         footer {
             text-align: center;
@@ -212,31 +228,41 @@
     </section>
 
     <section id="galeri" class="container">
-        <h2>Galeri Projek</h2>
-        <div class="grid">
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400" alt="Dashboard Projek">
-                <div class="card-info">
-                    <h3>Dashboard Monitoring</h3>
-                    <p>Sistem pemantauan infrastruktur server secara real-time.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400" alt="Coding">
-                <div class="card-info">
-                    <h3>Security Audit</h3>
-                    <p>Melakukan pengecekan celah keamanan pada aplikasi web.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=400" alt="E-Commerce">
-                <div class="card-info">
-                    <h3>E-Commerce App</h3>
-                    <p>Pengembangan platform jual beli online yang responsif.</p>
-                </div>
+
+    <h2>Galeri Projek</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=400">
+            <div class="card-info">
+                <h3>Dashboard Monitoring</h3>
+                <p>Sistem pemantauan server real-time.</p>
+                <button>Lihat Detail</button>
             </div>
         </div>
-    </section>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400">
+            <div class="card-info">
+                <h3>Security Audit</h3>
+                <p>Analisis keamanan aplikasi web.</p>
+                <button>Lihat Detail</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=400">
+            <div class="card-info">
+                <h3>API Development</h3>
+                <p>Membangun REST API scalable.</p>
+                <button>Lihat Detail</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
 
     <footer>
         <p>&copy; 2026 Muhamad Fadlurrahman | Portofolio Web Server Debian</p>
